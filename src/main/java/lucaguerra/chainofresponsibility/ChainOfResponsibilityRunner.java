@@ -17,8 +17,8 @@ public class ChainOfResponsibilityRunner implements CommandLineRunner {
 		maggiore.setUfficialeSuperiore(colonnello);
 		colonnello.setUfficialeSuperiore(generale);
 
-		int amount = 5000; // Replace with the desired amount
-		capitano.processRequest(amount);
+		int importo = 5000;
+		capitano.gestisciRichiesta(importo);
 	}
 
 }

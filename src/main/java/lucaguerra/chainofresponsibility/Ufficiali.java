@@ -17,13 +17,13 @@ public abstract class Ufficiali {
 		this.salario = salario;
 	}
 
-	public abstract void checkRequest(int amount);
+	public abstract void checkRequest(int importo);
 
-	public void processRequest(int amount) {
-		if (amount <= salario) {
+	public void gestisciRichiesta(int importo) {
+		if (importo <= salario) {
 			System.out.println(getClass().getSimpleName() + " può approvare la richiesta.");
 		} else if (UfficialeSuperiore != null) {
-			UfficialeSuperiore.processRequest(amount);
+			UfficialeSuperiore.gestisciRichiesta(importo);
 		} else {
 			System.out.println("Nessun ufficiale superiore può approvare la richiesta.");
 		}
