@@ -8,8 +8,8 @@ public class Maggiore extends Ufficiali {
 	}
 
 	@Override
-	public void checkRequest(int amount) {
-		if (amount <= getSalario()) {
+	public void verificaRichiesta(int importo) {
+		if (importo <= getSalario()) {
 			System.out.println("Maggiore non può effettuare questa richiesta");
 		}
 

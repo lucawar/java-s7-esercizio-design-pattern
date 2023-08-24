@@ -17,7 +17,7 @@ public abstract class Ufficiali {
 		this.salario = salario;
 	}
 
-	public abstract void checkRequest(int importo);
+	public abstract void verificaRichiesta(int importo);
 
 	public void gestisciRichiesta(int importo) {
 		if (importo <= salario) {

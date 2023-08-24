@@ -12,8 +12,8 @@ public class AdapterRunner implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 
 		Info info = new Info();
-		info.setNome("Mario");
-		info.setCognome("Rossi");
+		info.setNome("Aldo");
+		info.setCognome("Baglio");
 		info.setDataDiNascita(LocalDate.of(1985, 5, 15));
 
 		InfoAdapter infoAdapter = new InfoAdapter(info);
